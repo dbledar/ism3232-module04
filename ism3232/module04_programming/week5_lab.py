@@ -1,6 +1,6 @@
 # week5_lab.py
 # Author: Darian Peters
-# Business domain: Pruchase request
+# Business domain: Technology
 
 product_name = "Laptop"
 status = "Pending"
@@ -16,14 +16,14 @@ total = subtotal + tax
 requires_approval = total > 1000
 
 print("=== Purchase Request Summary ===")
-print(f"Product:                  {product_name}")
-print(f"Qty:                           {quantity}")
-print(f"Subtotal:               ${subtotal:.2f}")
-print(f"Tax:                      ${tax:.2f}")
-print(f"Total:                  ${total:.2f}")
-print(f"Requires approval:          {requires_approval}")
+print(f"Product:  {product_name}")
+print(f"Qty:      {quantity}")
+print(f"Subtotal: ${subtotal:,.2f}")
+print(f"Tax:      ${tax:,.2f}")
+print(f"Total:    ${total:,.2f}")
+print(f"Requires approval: {requires_approval}")
 
 user_qty = int(input("Enter a new quantity: "))
 new_total = unit_price * user_qty * 1.07
-print(f"New total for {user_qty} units: ${new_total:.2f}")
+print(f"New total for {user_qty} units: ${new_total:,.2f}")
 print(f"Requires approval: {new_total > 1000}")
